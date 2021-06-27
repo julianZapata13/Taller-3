@@ -1,0 +1,60 @@
+<div class="row justify-content-around">
+    <div class="col-sm-4 col-12">
+        <h1>Calculadora #1</h1>
+        <table class="contenedor">
+            <tr>
+              <td colspan="4"><textarea class="pantalla" id="resultado" disabled>{{ingresados}}</textarea>
+            </td>
+            </tr>
+            <tr>
+              <td><button class="btn btn-seconday botones" type="button" (click)="agregar(7)" id="siete">7</button></td>
+              <td><button class="btn btn-seconday botones" type="button" (click)="agregar(8)" id="ocho">8</button></td>
+              <td><button class="btn btn-seconday botones" type="button" (click)="agregar(9)" id="nueve">9</button></td>
+              <td><button class="btn btn-seconday botones" type="button" (click)="dividir()" id="division">/</button></td>
+            </tr>
+            <tr>
+              <td><button class="btn btn-seconday botones" type="button" (click)="agregar(4)" id="cuatro">4</button></td>
+              <td><button class="btn btn-seconday botones" type="button" (click)="agregar(5)" id="cinco">5</button></td>
+              <td><button class="btn btn-seconday botones" type="button" (click)="agregar(6)" id="seis">6</button></td>
+              <td><button class="btn btn-seconday botones" type="button" (click)="multiplicar()" id="multiplicar">*</button>
+            </td>
+            </tr>
+            <tr>
+              <td><button class="btn btn-seconday botones" type="button" (click)="agregar(1)" id="uno">1</button></td>
+              <td><button class="btn btn-seconday botones" type="button" (click)="agregar(2)" id="dos">2</button></td>
+              <td><button class="btn btn-seconday botones" type="button" (click)="agregar(3)" id="tres">3</button></td>
+              <td><button class="btn btn-seconday botones" type="button"  (click)="restar()"id="restar">-</button></td>
+            </tr>
+            <tr>
+                
+              <td><button class="btn btn-danger botones" type="button" (click)="limpiar()" id="borrar">C</button></td>
+              <td><button class="btn btn-seconday botones" type="button" (click)="agregar(0)" id="cero">0</button></td>
+              <td><button class="btn btn-success botones" type="button" (click)="calcular()" id="igual">=</button></td>
+              <td><button class="btn btn-seconday botones" type="button" (click)="sumar()" id="sumar">+</button></td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-sm-4 col-12">
+        <h1>Calculadora #2</h1>
+        <h5>Resultado:</h5>
+        <div class="pantalla2">
+            <h4>{{resultadoDos}}</h4>
+        </div>
+
+        <div class="form-group">
+            <label for="formGroupExampleInput">Operando 1</label>
+            <input class="form-control" 
+            type="number" placeholder="ingrese el operando 1…" [(ngModel)]="inputOperando1">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Operando 2 </label>
+            <input class="form-control" type="number" placeholder="ingrese el operando 2…" [(ngModel)]="inputOperando2">
+        </div>
+            <button type="button" class="btn btn-primary"(click)="sumarDos()">Sumar</button>
+            <button type="button" class="btn btn-success"(click)="restarDos()">Restar</button>
+            <button type="button" class="btn btn-danger"(click)="multiplicarDos()">Multiplicar</button>
+            <button type="button" class="btn btn-warning"(click)="dividirDos()">Dividir</button>
+            <button type="button" class="btn btn-secondary" (click)="limpiarDos()">Limpiar</button>
+        </div>
+</div>
+

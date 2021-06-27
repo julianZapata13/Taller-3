@@ -1,0 +1,49 @@
+.contenedor{
+    display:block;
+    background-color:#6c6e70;
+    width:325px;
+    height:520px;
+    margin: auto;
+    padding:20px;
+    border-radius: 15px;
+  }
+  .pantalla{
+    display:block;
+    text-align:right;
+    font-size: 30px;
+    margin-bottom: 30px;
+    width:285px;
+    height: 150px;
+    background-color:#fff;
+    border-radius: 10px;
+    
+  }
+  .botones{
+    display:block;
+    width:70px;
+    height: 70px;
+    font-size: 20px;
+  }
+
+  h1{
+      text-align: center;
+      margin-top: 5%;
+  }
+
+  h4{
+    margin-top: 5%;
+    color: white;
+    text-align: center;
+    font-size:x-large;
+    
+}
+
+
+.pantalla2{
+    display:block;
+    background-color:#000000;
+    margin: auto;
+    height: 80px;
+    padding: 10PX;
+    border-radius: 5px;
+}
